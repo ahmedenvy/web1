@@ -1,0 +1,22 @@
+footer{
+    background-color: rgba(91, 0, 209, 0.548);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+footer .contentf a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 16px;
+}
+
+@media (max-width:660px){
+    footer .contentf a:hover,
+    footer  p:hover{
+        color: rgb(115, 255, 80);
+        text-shadow: 0 0 10px;
+    }
+}

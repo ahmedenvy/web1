@@ -1,0 +1,122 @@
+.about{
+    padding: 10rem 9%;
+    min-height: 100vh;
+    background-color: black;
+
+}
+.heading{
+    text-align: center;
+    text-shadow: none;
+    font-size: 46px;
+    margin-bottom: 28px;
+}
+.about-box{
+    background: rgb(22, 22, 22);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    height: 700px;
+}
+.about-box .about-img{
+width: 1000px;
+margin-left: 100px;
+}
+
+.about-box .content-about .btn{
+    text-align: center;
+}
+.about-box .about-img img{
+    width: 100%;
+    border-radius: 50%;
+   
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.about-box .about-img img:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 51px rgba(0, 0, 0, 0.021);
+}
+
+.about-box .content-about p{
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-size: 17px;
+
+
+}
+.about-box .btn{
+    position: absolute;
+
+   align-self: end;
+   bottom: -73%;
+   left: 55%;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   background-color: rgb(100, 114, 237);
+   border-radius: 1rem;
+   padding: 5px 1rem ;
+   border: 2px solid transparent; 
+   
+transition: 1s;
+   
+}
+
+.about-box .btn:hover{
+    transform: scale(1.1);
+background-color: transparent;
+padding: 4px 1.1rem;
+border: 2px solid rgb(255, 255, 255);
+
+
+
+}
+.about-box .btn:hover{
+  
+}
+
+@media (max-width:660px){
+
+    .about-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-box .about-img{
+        width: 64%;
+        position: relative;
+        left: -41px;
+        bottom: 69px;
+
+    }
+
+
+    
+    .about-box .about-img img{
+        width: 100%;
+    }
+
+
+.about-box .content-about p{
+    font-size: 16px;
+    font-weight: 300;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+
+}
+
+
+.about-box .btn{
+    position: relative;
+    left: -36.1%;
+    bottom: -7%;
+}
+
+
+}

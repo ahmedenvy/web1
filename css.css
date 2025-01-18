@@ -1,0 +1,204 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar{width: 9px;}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(19, 0, 65);
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(34, 0, 112);
+}
+body{
+    background-color: black;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.7rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(60, 0, 129, 0.637);
+    filter: drop-shadow( 0 0 25px black);
+    z-index: 11;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight:700 ;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+text-transform: uppercase;
+}
+.logo:hover{
+    transform: scale(1.1);
+   
+}
+span{
+    color: rgb(0, 0, 0);
+   
+    background-clip: text;
+    text-shadow: 0 0 544px white;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    border-bottom: 1px solid transparent;
+    font-weight: 700;
+}
+.navbar a:hover{
+    transform: scale(1.3);
+    
+    border-bottom: 1px solid white;
+}
+
+
+/* header end*/
+
+.home{
+    
+    background: url(/imge/389922.jpg) center center/cover fixed;
+    min-height: 100vh;
+    color: antiquewhite;
+    padding: 10rem 9%;
+}
+
+
+.home .home-box{
+margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.home-box .home-content h1{
+    font-size: 74px;
+    line-height: 1;
+    
+}
+
+.home-box .home-content h2{
+    font-size: 36px;
+    line-height: 1;
+  
+}
+
+.home-box .home-content p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 22px;
+    text-align: start;
+}
+
+
+.home-box .home-img {
+    border-radius: 50%;
+    height: 500px;
+    width: 676px;
+   cursor: pointer;
+   transition: 1s;
+
+    
+}
+.home-box .home-img:hover{
+    transform: scale(1.03);
+    
+}
+
+
+.home-box .home-img img{
+   max-width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+    
+}
+
+.home-box .btnn .btn{
+    margin-right: 16px;
+   
+    padding: 10px 5%;
+    background-color: rgb(40, 0, 104);
+    border-radius: 3rem;
+    text-decoration: none;
+    color: white;
+    
+    transition: 1s;
+}
+.home-box .btnn .btn:hover{
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+    background-color: rgb(216, 0, 90);
+
+    
+
+}
+
+
+@media (max-width:660px){
+ 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+
+.navbar a{
+    display: none;
+}
+
+
+
+
+    .home-box{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+margin: 0;
+
+    }
+
+
+    .home-box .home-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-box .home-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .home-box .home-img img{
+        width: 100%;
+    }
+}
+
+
+
